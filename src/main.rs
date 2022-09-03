@@ -1,6 +1,9 @@
 // A function can be at any order of the code, it doesnt need to be declarated before using it
 fn main() {
     my_first_function();
+
+    // Declaratinga second function, a number/integer should have before a &, instead of 3 it should be passed as &3
+    my_second_function("first", &3);
 }
 
 // the functions should have snake case
@@ -22,5 +25,12 @@ fn my_first_function() {
     println!(
         "To display a variable it should be inside a curly bracket '{}'",
         value
+    );
+}
+
+fn my_second_function(first_argument: &str, second_argument: &i128) {
+    println!(
+        "the first argument is here {} and the second here {}!",
+        first_argument, second_argument
     );
 }
