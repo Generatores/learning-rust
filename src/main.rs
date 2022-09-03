@@ -1,4 +1,6 @@
-fn main() {
+// the functions should have snake case
+// instead of myFirstFunction it should be my_first_function
+fn my_first_function() {
     // To print text on the command line we use the println! function
     println!("Hello, world!");
 
@@ -15,5 +17,9 @@ fn main() {
     println!(
         "To display a variable it should be inside a curly bracket '{}'",
         value
-    )
+    );
+}
+
+fn main() {
+    my_first_function();
 }
